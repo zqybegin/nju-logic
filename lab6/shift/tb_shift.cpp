@@ -15,7 +15,7 @@ int main() {
     dut->clk = 1;
 
     while(1){
-        if(count == 500000){
+        if(count == 100){
             dut->clk ^= 1;
             count = 0;
         }
