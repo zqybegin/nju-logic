@@ -1,10 +1,10 @@
-module mux21(
-    input a,
-    input b,
-    input s,
+module mux21 (
+    input  a,
+    input  b,
+    input  s,
     output y
 );
 
-    assign y = (s)? a:b;
+    assign y = (s) ? a : b;
 
 endmodule

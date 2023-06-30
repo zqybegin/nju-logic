@@ -8,15 +8,15 @@ module top(
 );
 
     encode83 U_encode83(
-        .x(x),
-        .en(en),
-        .y(y),
-        .out(out)
+        .x    (x  ),
+        .en   (en ),
+        .y    (y  ),
+        .out  (out)
     );
 
     bcd7seg U_bcd7seg(
-        .b(y),
-        .h(hex)
+        .b    (y  ),
+        .h    (hex)
     );
 
 endmodule
