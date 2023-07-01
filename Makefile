@@ -17,7 +17,7 @@ clean:
 	rm -rf $(BUILD_DIR)
 
 $(EXE_DIR):$(RSC_DIR)
-	verilator --trace -cc --build --exe $^ --Mdir $(BUILD_DIR) -o $(EXE_DIR)
+	verilator --trace -cc --build --x-assign 1 --exe $^ --Mdir $(BUILD_DIR) -o $(EXE_DIR)
 
 nvboard:$(RSC_DIR) $(NVBOARD_ARCHIVE)
 	rm -rf $(BUILD_DIR)
